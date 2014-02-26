@@ -1,9 +1,18 @@
-# My New Blog!
+#ivan the terribles blog (performance improvements)
+* Using [multi_fetch_fragments](https://github.com/n8/multi_fetch_fragments) to cache partial rendering which drastically improved load performance.
 
-I've got a lot to say, and now I have a place to say it!!!!!
+* Implimented eager loading to reduce queries.
 
-Read all my amazing posts!!!!! You can load them into the app with: `rake load:blog`
+#How to Run
 
-Since I know you want to read them all, I designed my page to show EVERYTHING on the front page of the site!!!!!
+  rake db:setup
+  rake load:blog
+  rails s
 
-I know it is a little slow (but totes worth it!!!!)... _Do you know how I can make it faster?_
+#Load Impact Results
+Full 10mb slug of 100 posts with 100 comments per post and
+
+![example](http://f.cl.ly/items/431U3i0h2G341i1C3w45/load-impack-10x-px-dynos.png)
+
+
+##[MIT License](http://johnjensen.mit-license.org)
