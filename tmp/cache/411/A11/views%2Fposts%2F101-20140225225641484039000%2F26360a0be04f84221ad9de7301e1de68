@@ -1,11 +1,0 @@
-o: ActiveSupport::Cache::Entry:@valueIC:ActionView::OutputBuffer",<section class="post">
-  <h2>Post 101: mtdew</h2>
-  <div class="post">cool</div>
-  <div class="post_nav">
-  <a href="/posts/101">Show</a> |
-  <a href="/posts/101/edit">Edit</a> |
-  <a data-confirm="Are you sure?" data-method="delete" href="/posts/101" rel="nofollow">Destroy</a>
-</div>
-  
-</section>
-:ET:@html_safeT:@created_atf1393369008.357804:@expires_in0
