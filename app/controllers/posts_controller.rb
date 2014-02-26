@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all.load
+    @posts = Post.all.load.limit(25)
 
     respond_to do |format|
       format.html # index.html.erb
