@@ -2,7 +2,7 @@ class RepliesController < ApplicationController
   # GET /replies
   # GET /replies.json
   def index
-    @replies = Reply.all.includes(:comment)
+    @replies = Reply.includes(:comment).all
 
     respond_to do |format|
       format.html # index.html.erb
